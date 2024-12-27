@@ -9,9 +9,7 @@ function App() {
   return (
     <Router>
       <Navbar /> {/* Navbar component */}
-      
         <Routes>
-          {/* Home route now displays ClanInfo */}
           <Route 
             path="/" 
             element={<ClanInfo />} 

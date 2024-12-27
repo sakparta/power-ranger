@@ -38,9 +38,7 @@ const ClanInfo = () => {
   if (error) return <p style={{ color: "red" }}>{error}</p>;
 
   return (
-  
   <div className="">
-  
     <div className="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6 mt-10">
       <h1 className="text-3xl font-bold text-center mb-4">{clan.name}</h1>
       <img

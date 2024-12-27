@@ -13,10 +13,8 @@ const formatDate = (dateString) => {
   const hour = dateString.slice(9, 11);
   const minute = dateString.slice(11, 13);
   const second = dateString.slice(13, 15);
-  
   // Rebuild the date string in ISO 8601 format
   const isoDateString = `${year}-${month}-${day}T${hour}:${minute}:${second}.000Z`;
-
   const date = new Date(isoDateString);  // Create a Date object from the fixed string
 
   if (isNaN(date.getTime())) return "Invalid Date";  // If invalid date, return this

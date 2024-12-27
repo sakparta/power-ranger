@@ -15,7 +15,6 @@ const CurrentWar = () => {
       try {
         setLoading(true);
         const response = await axios.get(apiUrl);
-        console.log(response.data); // Log the response to verify the structure
         setCurrentWar(response.data);
       } catch (err) {
         console.error("Error fetching current war data:", err);
@@ -57,7 +56,7 @@ const CurrentWar = () => {
   // Sorted members
   const sortedClanMembers = sortMembers(clanMembers);
   const sortedOpponentMembers = sortMembers(opponentMembers);
-
+  
   return (
     <div className="bg-slate-600">
       <div className="flex justify-between p-4 container mx-auto ">
